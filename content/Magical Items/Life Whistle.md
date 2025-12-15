@@ -1,0 +1,1 @@
+If you blow the whistle in bright light or under sunlight, it allows you to cast the [mass cure wounds](https://5e.tools/spells.html#mass%20cure%20wounds_phb) spell. After you have used the whistle this way, you cannot do so until next dawn.
