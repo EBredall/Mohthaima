@@ -18,8 +18,6 @@
     "format": "npx prettier . --write",
     "test": "tsx --test",
     "profile": "0x -D prof ./quartz/bootstrap-cli.mjs build --concurrency=1",
-    
-    // 💡 NEW SCRIPTS FOR YOUR PROJECT:
     "build": "npx quartz build",
     "sync": "npx quartz sync",
     "watch-sync": "npx onchange 'content/**/*' -- npx quartz sync",
