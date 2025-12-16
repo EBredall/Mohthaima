@@ -22,7 +22,7 @@
     "sync": "npx quartz sync",
     "start-watcher": "npx npm-watch",
 	"auto-deploy": "git add . && git commit -m \"Auto-Publish: $(date '+%Y-%m-%d %H:%M:%S')\" || true && git push && echo Script Complete && true",
-    "full-deploy": "npx quartz sync || true && npm run build && git add public/ || true && npm run auto-deploy"
+    "full-deploy": "npx quartz sync && npm run build && npm run auto-deploy"
   },  
   "watch": {
     "full-deploy": {
