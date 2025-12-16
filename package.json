@@ -30,7 +30,10 @@
         "\"C:/Users/Ethan/Downloads/Leisure/Dnd/Mohthaima Player\"" 
       ],
       "extensions": "md,ts,tsx",
-      "quiet": false
+      "quiet": false,
+	  "ignore": [
+		".git/**/*"
+	  ]
     }
   },
   "engines": {
