@@ -1,2 +1,0 @@
-#NPC 
-Domestic abuse accused
