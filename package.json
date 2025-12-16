@@ -11,13 +11,19 @@
     "type": "git",
     "url": "https://github.com/jackyzha0/quartz.git"
   },
-  "scripts": {
+"scripts": {
     "quartz": "./quartz/bootstrap-cli.mjs",
     "docs": "npx quartz build --serve -d docs",
     "check": "tsc --noEmit && npx prettier . --check",
     "format": "npx prettier . --write",
     "test": "tsx --test",
-    "profile": "0x -D prof ./quartz/bootstrap-cli.mjs build --concurrency=1"
+    "profile": "0x -D prof ./quartz/bootstrap-cli.mjs build --concurrency=1",
+    
+    // 💡 NEW SCRIPTS FOR YOUR PROJECT:
+    "build": "npx quartz build",
+    "sync": "npx quartz sync",
+    "watch-sync": "npx onchange 'content/**/*' -- npx quartz sync",
+    "deploy": "npm run build && git add . && git commit -m 'Publish new content' && git push"
   },
   "engines": {
     "npm": ">=10.9.2",
