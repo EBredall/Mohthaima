@@ -20,20 +20,17 @@
     "profile": "0x -D prof ./quartz/bootstrap-cli.mjs build --concurrency=1",
     "build": "npx quartz build",
     "sync": "npx quartz sync",
-    "auto-deploy": "npm run build && git add . && git commit -m \"Auto-Publish: New Content\" && git push && echo Script Complete && true"
-  },
-"watch": {
-    "auto-deploy": {
+    "start-watcher": "npx npm-watch",
+    "auto-deploy": "git add . && git commit -m \"Auto-Publish: New Content\" && git push && echo Script Complete && true",
+    "full-deploy": "npx quartz sync && npm run auto-deploy"
+  },  
+  "watch": {
+    "full-deploy": {
       "patterns": [
         "\"C:/Users/Ethan/Downloads/Leisure/Dnd/Mohthaima Player\"" 
       ],
       "extensions": "md,ts,tsx",
-      "quiet": false,
-      "ignore": [
-        "content/**/*", 
-        "public/**/*"
-      ],
-      "script": "npx quartz sync && npm run auto-deploy" 
+      "quiet": false
     }
   },
   "engines": {
