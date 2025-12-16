@@ -22,13 +22,14 @@
     "sync": "npx quartz sync",
     "auto-deploy": "npm run build && git add . && git commit -m \"Auto-Publish: New Content\" && git push"
   },
-  "watch": {
+"watch": {
     "auto-deploy": {
       "patterns": [
-        "content"
+        "\"C:/Users/Ethan/Downloads/Leisure/Dnd/Mohthaima Player\""
       ],
       "extensions": "md,ts,tsx",
-      "quiet": false
+      "quiet": false,
+      "script": "npx quartz sync && npm run auto-deploy" 
     }
   },
   "engines": {
