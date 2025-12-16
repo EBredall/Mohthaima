@@ -25,10 +25,14 @@
 "watch": {
     "auto-deploy": {
       "patterns": [
-        "\"C:/Users/Ethan/Downloads/Leisure/Dnd/Mohthaima Player\""
+        "\"C:/Users/Ethan/Downloads/Leisure/Dnd/Mohthaima Player\"" 
       ],
       "extensions": "md,ts,tsx",
       "quiet": false,
+      "ignore": [
+        "content/**/*", 
+        "public/**/*"
+      ],
       "script": "npx quartz sync && npm run auto-deploy" 
     }
   },
