@@ -20,7 +20,7 @@
     "profile": "0x -D prof ./quartz/bootstrap-cli.mjs build --concurrency=1",
     "build": "npx quartz build",
     "sync": "npx quartz sync",
-    "auto-deploy": "npm run build && git add . && git commit -m \"Auto-Publish: New Content\" && git push"
+    "auto-deploy": "npm run build && git add . && git commit -m \"Auto-Publish: New Content\" && git push && true"
   },
 "watch": {
     "auto-deploy": {
