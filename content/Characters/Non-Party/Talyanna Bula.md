@@ -1,4 +1,4 @@
-#NPC [[Locations/Cities and Towns/Tokarov]]
+#NPC [[Tokarov]]
 Incompetent lawyer, grey hair and glasses, around teenage. His only case of note that he won was domestic abuse.
 
 

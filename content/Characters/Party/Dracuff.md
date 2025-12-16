@@ -1,2 +1,2 @@
 #NPC 
-A servant of [[Characters/Party/Shapiffany 'Piff' Oros]].
+A servant of [[Shapiffany 'Piff' Oros]].
